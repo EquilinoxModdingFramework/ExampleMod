@@ -1,0 +1,2 @@
+include ':EMF'
+project(':EMF').projectDir = new File(settingsDir, '../EquilinoxModdingFramework')

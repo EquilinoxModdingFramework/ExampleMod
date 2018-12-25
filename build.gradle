@@ -6,6 +6,8 @@ def gameVersion = '1.0.7'
 def modVersion = '1.0.0'
 
 dependencies {
+	compile 'org.javassist:javassist:3.24.1-GA'
+
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
     

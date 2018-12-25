@@ -1,6 +1,8 @@
 package kd.equilinox.example;
 
-import kd.equilinox.modloader.IModLoader;
+import kd.equilinox.events.InitializationEvent;
+import kd.equilinox.events.PostInitializationEvent;
+import kd.equilinox.events.PreInitializationEvent;
 import kd.equilinox.mods.IMod;
 import kd.equilinox.utils.Logger;
 
@@ -14,13 +16,15 @@ public class ModClass implements IMod {
 		return "Example Mod";
 	}
 
-	public void preInit(IModLoader modLoader) {
-		Logger.info("Hello from Example Mod !!!");
+	public void preInit(PreInitializationEvent event) {
+		Logger.info("Hello from Example Mod !!! PreInit.");
 	}
 
-	public void init(IModLoader modLoader) {
+	public void init(InitializationEvent event) {
+		Logger.info("Hello from Example Mod !!! Init.");
 	}
 
-	public void postInit(IModLoader modLoader) {
+	public void postInit(PostInitializationEvent event) {
+		Logger.info("Hello from Example Mod !!! PostInit.");
 	}
 }

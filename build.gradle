@@ -2,7 +2,7 @@ apply plugin: 'java'
 
 def name = 'ExampleMod'
 def gameVersion = '1.0.7'
-def modVersion = '1.0.0'
+def modVersion = '1.2.0'
 
 dependencies {
     // Use JUnit test framework
